@@ -1,15 +1,14 @@
-# Entornos virtuales
-venv/
-env/
-.env
-
-# Archivos de Python
+# Python
 __pycache__/
 *.py[cod]
+*$py.class
+venv/
+env/
 
 # IDEs
 .vscode/
 .idea/
 
-# Datos temporales
-*.log
+# Sistema
+.DS_Store
+Thumbs.db

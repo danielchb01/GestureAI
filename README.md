@@ -14,15 +14,24 @@ El objetivo principal de **EmoGestureAI** es desarrollar una aplicación interac
 * **David** - Desarrollador e Investigador
 * **Javier** - Desarrollador e Investigador
 
-## Organización del Repositorio
+## 📂 Estructura del Proyecto
 El proyecto está organizado siguiendo una arquitectura modular para garantizar un código limpio y escalable:
 
-* **`src/`**: Contiene el código fuente principal del proyecto.
-    * `main.py`: Punto de entrada de la aplicación.
-* **`docs/`**: Documentación técnica, diagramas de arquitectura y la memoria final del grado.
-* **`environment/`**: Archivos de configuración del entorno de desarrollo, incluyendo `requirements.txt` para la gestión de librerías.
-* **`.gitignore`**: Especifica los archivos que Git debe ignorar (archivos temporales, entornos virtuales, etc.).
-* **`README.md`**: Descripción general del proyecto e instrucciones (este archivo).
+```text
+EmoGestureAI/
+│
+├── 📄 .gitignore              # Archivos excluidos del control de versiones
+├── 📘 README.md               # Documentación general y guía de inicio
+│
+├── 📁 docs/                   # Documentación técnica y memoria del grado
+│   └── 📄 .gitkeep            # Archivo para mantener la carpeta en Git
+│
+├── 📁 environment/            # Configuración del entorno de desarrollo
+│   └── 📄 requirements.txt    # Dependencias (OpenCV, MediaPipe, etc.)
+│
+└── 📁 src/                    # Código fuente de la aplicación
+    └── 📄 main.py             # Punto de entrada principal
 
+```
 ---
 *Este proyecto se desarrolla como parte de la asignatura de **Proyecto de big data e inteligencia artificial**.*
