@@ -10,9 +10,11 @@ El objetivo principal de **EmoGestureAI** es desarrollar una aplicación interac
 
 ## Miembros
 * **Daniel Chacón Bautista** - Desarrollador e Investigador
-* **Álvaro Benito Benito** - Desarrollador e Investigador
-* **David** - Desarrollador e Investigador
-* **Javier** - Desarrollador e Investigador
+* **Javier Quiñonero González** - Desarrollador e Investigador
+* **David Bartol Cortés** - Desarrollador e Investigador
+* **Álvaro Benito Diaz** - Desarrollador e Investigador
+
+
 
 ## 📂 Estructura del Proyecto
 El proyecto está organizado siguiendo una arquitectura modular para garantizar un código limpio y escalable:
