@@ -61,17 +61,34 @@ El proyecto está organizado siguiendo una arquitectura modular para garantizar 
 ```text
 EmoGestureAI/
 │
-├── 📄 .gitignore              # Archivos excluidos del control de versiones
-├── 📘 README.md               # Documentación general y guía de inicio
+├── 📁 data/                   # Almacenamiento de datasets
+│   └── 📄 landmarks.csv       # Coordenadas extraídas para entrenamiento
 │
-├── 📁 docs/                   # Documentación técnica y memoria del grado
-│   └── 📄 .gitkeep            # Archivo para mantener la carpeta en Git
+├── 📁 docs/                   # Documentación técnica y memorias
+│   ├── 🖼️ arquitectura.png    # Diagrama de flujo del sistema
+│   ├── 📄 Fase0.pdf           # Documentación de planificación
+│   ├── 📄 Fase1.pdf           # Documentación de desarrollo inicial
+|   ├── 📄 Fase2.pdf           # Primera versión 
+│   └── 📄 services.py         # Scripts auxiliares de documentación
 │
-├── 📁 environment/            # Configuración del entorno de desarrollo
-│   └── 📄 requirements.txt    # Dependencias (OpenCV, MediaPipe, etc.)
+├── 📁 environment/            # Configuración del entorno
+│   └── 📄 requirements.txt    # Dependencias (OpenCV, MediaPipe, Sklearn, etc.)
 │
-└── 📁 src/                    # Código fuente de la aplicación
-    └── 📄 main.py             # Punto de entrada principal
+├── 📁 models/                 # Binarios de IA y métricas
+│   ├── 🖼️ confusion_matrix.png # Resultado visual del entrenamiento
+│   ├── 📦 label_encoder.pkl   # Traductor de etiquetas numéricas a texto
+│   └── 📦 modelo_gestos.pkl    # Modelo RandomForest entrenado
+│
+└── 📁 src/                    # Código fuente (Core del proyecto)
+    ├── 📁 ml/                 # Submódulo de Inteligencia Artificial
+    │   ├── 📄 predict.py      # Motor de inferencia en tiempo real
+    │   ├── 📄 processor.py    # Extracción de puntos con MediaPipe
+    │   └── 📄 train.py        # Script de entrenamiento del modelo
+    │
+    ├── 📄 camera.py           # Gestión y abstracción de la Webcam
+    ├── 📄 game_logic.py       # Reglas del juego y motor de estados
+    ├── 📄 main.py             # Orquestador y punto de entrada principal
+    └── 📄 ui.py               # Renderizado de interfaz y feedback visual
 
 ```
 ---
