@@ -1,42 +1,40 @@
-import numpy as np
+import os
 import joblib
+import numpy as np
 
-# Cargar el modelo y codificador una sola vez al importar
-_modelo = joblib.load("models/modelo_gestos.pkl")
-_encoder = joblib.load("models/label_encoder.pkl")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+PATH_MODELO = os.path.join(BASE_DIR, "..", "..", "models", "modelo_gestos.pkl")
+PATH_ENCODER = os.path.join(
+    BASE_DIR, "..", "..", "models", "label_encoder.pkl")
 
-UMBRAL_CONFIANZA = 0.80
+if not os.path.exists(PATH_MODELO):
+    raise FileNotFoundError(f"No se encuentra el modelo en {PATH_MODELO}")
+
+_modelo = joblib.load(PATH_MODELO)
+_encoder = joblib.load(PATH_ENCODER)
+
+UMBRAL_CONFIANZA = 0.50
 N_FEATURES = _modelo.n_features_in_
 
-def predecir_gesto(landmarks: list) -> dict:
-    """
-    Recibe una lista de 63 floats (21 puntos x,y,z de MediaPipe)
-    y devuelve el gesto predicho y el nivel de confianza.
 
-    Returns:
-        {
-            "gesto": "Paper" | "Scissors" | "Stone" | None,
-            "confianza": float (0.0 - 1.0),
-            "reconocido": bool
-        }
-    """
+def predecir_gesto(landmarks: list) -> dict:
     if len(landmarks) != N_FEATURES:
-        raise ValueError(f"Se esperaban {N_FEATURES} landmarks, se recibieron {len(landmarks)}")
-    
+        return {
+            "gesto": f"Error: modelo espera {N_FEATURES}",
+            "confianza": 0,
+            "reconocido": False
+        }
+
     X = np.array(landmarks).reshape(1, -1)
     probas = _modelo.predict_proba(X)[0]
     confianza = float(np.max(probas))
     idx = int(np.argmax(probas))
     gesto = _encoder.inverse_transform([idx])[0]
 
-    if confianza < UMBRAL_CONFIANZA:
-        return {"gesto": None, "confianza": confianza, "reconocido": False}
-    
-    return {"gesto": gesto, "confianza": confianza, "reconocido": True}
+    reconocido = confianza >= UMBRAL_CONFIANZA
 
-
-if __name__ == "__main__":
-    # Test rápido con landmarks a cero (solo para verificar que carga bien)
-    test = [0.0] * _modelo.n_features_in_
-    resultado = predecir_gesto(test)
-    print(f"Test de carga OK: {resultado}")
+    return {
+        "gesto": gesto if reconocido else None,
+        "confianza": confianza,
+        "reconocido": reconocido
+    }
