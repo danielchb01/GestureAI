@@ -54,6 +54,10 @@ pip install -r environment/requirements.txt
 ````
 python src/main.py
 ````
+#### 5. Lanzar el dashboard
+````
+streamlit run src/dashboard.py
+````
 
 ## 📂 Estructura del Proyecto
 El proyecto está organizado siguiendo una arquitectura modular para garantizar un código limpio y escalable:
