@@ -1,0 +1,60 @@
+2026-05-02 17:57:09,340 [INFO] __main__: Inicializando EmoGestureApp...
+2026-05-02 17:58:22,662 [INFO] __main__: Inicializando EmoGestureApp...
+2026-05-02 17:59:40,411 [INFO] __main__: Inicializando EmoGestureApp...
+2026-05-02 17:59:40,817 [INFO] database: DatabaseManager inicializado en C:\Users\alvar\Desktop\IA & BIGDATA\ProyectoBigData\GesturaAI\src\..\data\partidas.db
+2026-05-02 17:59:40,818 [INFO] __main__: EmoGestureApp inicializada correctamente.
+2026-05-02 17:59:40,818 [INFO] __main__: Aplicación iniciada. Presiona 'q' para salir.
+2026-05-02 18:01:05,646 [INFO] __main__: Inicializando EmoGestureApp...
+2026-05-02 18:01:05,830 [INFO] database: DatabaseManager inicializado en C:\Users\alvar\Desktop\IA & BIGDATA\ProyectoBigData\GesturaAI\src\..\data\partidas.db
+2026-05-02 18:01:05,830 [INFO] __main__: EmoGestureApp inicializada correctamente.
+2026-05-02 18:01:05,830 [INFO] __main__: Aplicación iniciada. Presiona 'q' para salir.
+2026-05-02 18:01:32,284 [WARNING] __main__: No se detectó mano en el frame.
+2026-05-02 18:01:38,369 [WARNING] __main__: No se detectó mano en el frame.
+2026-05-02 18:02:07,011 [INFO] database: Conexión SQLite cerrada.
+2026-05-02 18:02:11,435 [INFO] __main__: Inicializando EmoGestureApp...
+2026-05-02 18:02:11,703 [INFO] database: DatabaseManager inicializado en C:\Users\alvar\Desktop\IA & BIGDATA\ProyectoBigData\GesturaAI\src\..\data\partidas.db
+2026-05-02 18:02:11,703 [INFO] __main__: EmoGestureApp inicializada correctamente.
+2026-05-02 18:02:11,703 [INFO] __main__: Aplicación iniciada. Presiona 'q' para salir.
+2026-05-02 18:02:24,354 [INFO] database: Partida #1 guardada: Stone vs Stone -> empate (conf=0.85)
+2026-05-02 18:02:30,540 [INFO] database: Partida #2 guardada: Paper vs Paper -> empate (conf=0.91)
+2026-05-02 18:02:35,021 [INFO] database: Partida #3 guardada: Scissor vs Paper -> victoria (conf=0.99)
+2026-05-02 18:02:41,499 [INFO] database: Partida #4 guardada: Stone vs Paper -> derrota (conf=0.89)
+2026-05-02 18:02:46,038 [INFO] database: Partida #5 guardada: Stone vs Stone -> empate (conf=0.92)
+2026-05-02 18:02:49,916 [INFO] database: Partida #6 guardada: Stone vs Paper -> derrota (conf=0.88)
+2026-05-02 18:02:53,853 [INFO] database: Partida #7 guardada: Stone vs Stone -> empate (conf=0.90)
+2026-05-02 18:02:57,726 [INFO] database: Partida #8 guardada: Scissor vs Scissor -> empate (conf=0.99)
+2026-05-02 18:03:03,277 [INFO] database: Partida #9 guardada: Paper vs Scissor -> derrota (conf=0.92)
+2026-05-02 18:03:07,214 [INFO] database: Partida #10 guardada: Stone vs Stone -> empate (conf=0.94)
+2026-05-02 18:03:13,292 [INFO] database: Partida #11 guardada: Paper vs Scissor -> derrota (conf=1.00)
+2026-05-02 18:03:18,907 [INFO] database: Partida #12 guardada: Paper vs Stone -> victoria (conf=0.97)
+2026-05-02 18:03:23,238 [INFO] database: Partida #13 guardada: Scissor vs Paper -> victoria (conf=0.99)
+2026-05-02 18:03:26,922 [INFO] database: Partida #14 guardada: Stone vs Scissor -> victoria (conf=0.85)
+2026-05-02 18:03:31,132 [INFO] database: Partida #15 guardada: Paper vs Paper -> empate (conf=0.99)
+2026-05-02 18:03:35,470 [INFO] database: Partida #16 guardada: Stone vs Paper -> derrota (conf=0.88)
+2026-05-02 18:03:39,276 [INFO] database: Partida #17 guardada: Scissor vs Stone -> derrota (conf=0.99)
+2026-05-02 18:08:26,905 [INFO] database: Partida #18 guardada: Stone vs Stone -> empate (conf=0.96)
+2026-05-02 18:08:49,699 [INFO] database: Conexión SQLite cerrada.
+2026-05-02 18:08:53,553 [INFO] __main__: Inicializando EmoGestureApp...
+2026-05-02 18:08:53,820 [INFO] database: DatabaseManager inicializado en C:\Users\alvar\Desktop\IA & BIGDATA\ProyectoBigData\GesturaAI\src\..\data\partidas.db
+2026-05-02 18:08:53,820 [INFO] __main__: EmoGestureApp inicializada correctamente.
+2026-05-02 18:08:53,821 [INFO] __main__: Aplicación iniciada. Presiona 'q' para salir.
+2026-05-02 18:09:07,021 [INFO] database: Partida #19 guardada: Stone vs Paper -> derrota (conf=0.92)
+2026-05-02 18:09:20,523 [INFO] database: Partida #20 guardada: Paper vs Scissor -> derrota (conf=1.00)
+2026-05-02 18:09:43,833 [INFO] database: Partida #21 guardada: Paper vs Paper -> empate (conf=1.00)
+2026-05-02 18:09:48,780 [INFO] database: Partida #22 guardada: Scissor vs Stone -> derrota (conf=0.96)
+2026-05-02 18:09:52,650 [INFO] database: Partida #23 guardada: Scissor vs Paper -> victoria (conf=0.97)
+2026-05-02 18:10:00,308 [WARNING] __main__: No se detectó mano en el frame.
+2026-05-02 18:10:06,190 [INFO] database: Conexión SQLite cerrada.
+2026-05-02 18:13:01,969 [INFO] __main__: Cerrando aplicación...
+2026-05-02 18:13:01,972 [INFO] database: Conexión SQLite cerrada.
+2026-05-02 18:13:01,983 [INFO] __main__: Aplicación cerrada correctamente.
+2026-05-02 18:13:02,156 [INFO] database: Conexión SQLite cerrada.
+2026-05-02 18:33:12,860 [INFO] __main__: Inicializando EmoGestureApp...
+2026-05-02 18:33:13,194 [INFO] database: DatabaseManager inicializado en C:\Users\alvar\Desktop\IA & BIGDATA\ProyectoBigData\GesturaAI\src\..\data\partidas.db
+2026-05-02 18:33:13,194 [INFO] __main__: EmoGestureApp inicializada correctamente.
+2026-05-02 18:33:13,194 [INFO] __main__: Aplicación iniciada. Presiona 'q' para salir.
+2026-05-02 18:33:37,890 [INFO] database: Partida #24 guardada: Paper vs Paper -> empate (conf=0.90)
+2026-05-02 18:33:44,170 [INFO] database: Partida #25 guardada: Scissor vs Paper -> victoria (conf=0.98)
+2026-05-02 18:33:49,982 [INFO] database: Partida #26 guardada: Paper vs Scissor -> derrota (conf=0.99)
+2026-05-02 18:33:54,590 [INFO] database: Partida #27 guardada: Stone vs Scissor -> victoria (conf=0.76)
+2026-05-02 18:34:56,535 [INFO] database: Conexión SQLite cerrada.

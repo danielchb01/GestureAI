@@ -11,3 +11,6 @@ joblib
 # Visualización y Métricas
 matplotlib       
 seaborn          
+
+# Dashboard de Analítica (BI)
+streamlit        
