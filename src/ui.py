@@ -3,29 +3,44 @@ import numpy as np
 
 
 class UIHandler:
-    WHITE = (255, 255, 255)
-    GREEN = (0, 255, 0)
-    RED = (0, 0, 255)
-    BLUE = (255, 100, 0)
+    RETRO_GREEN = (0, 255, 65)   # Verde fósforo
+    RETRO_PINK = (255, 0, 255)    # Rosa neón
+    RETRO_AMBER = (0, 191, 255)   # Naranja/Ámbar
     BLACK = (0, 0, 0)
+    WHITE = (220, 220, 220)
 
     @staticmethod
-    def draw_hud(frame, msg, score, ia_move=None, result_color=(255, 255, 255)):
-        cv2.rectangle(frame, (0, 0), (640, 80), (30, 30, 30), -1)
-        cv2.line(frame, (0, 80), (640, 80), (200, 200, 200), 2)
+    def draw_menu(frame):
+        overlay = frame.copy()
+        cv2.rectangle(overlay, (0, 0),
+                      (frame.shape[1], frame.shape[0]), (15, 15, 15), -1)
+        cv2.addWeighted(overlay, 0.85, frame, 0.15, 0, frame)
+        cv2.putText(frame, ">> EMO GESTURE AI <<", (60, 200),
+                    cv2.FONT_HERSHEY_TRIPLEX, 1.2, UIHandler.RETRO_GREEN, 2)
+        cv2.putText(frame, "INSERT COIN: [PRESS SPACE]", (140, 300),
+                    cv2.FONT_HERSHEY_PLAIN, 1.5, UIHandler.RETRO_PINK, 2)
+        cv2.putText(frame, "EXIT: [PRESS Q]", (230, 360),
+                    cv2.FONT_HERSHEY_PLAIN, 1.2, UIHandler.WHITE, 1)
+        return frame
 
-        cv2.putText(frame, f"SCORE: {score}", (20, 35),
-                    cv2.FONT_HERSHEY_DUPLEX, 0.8, (255, 255, 0), 2)
-        cv2.putText(frame, msg, (20, 65),
-                    cv2.FONT_HERSHEY_DUPLEX, 0.6, result_color, 1)
+    @staticmethod
+    def draw_hud(frame, msg, score, ia_move=None, result_color=(0, 255, 65)):
+        """HUD más robusto y espaciado."""
+        cv2.rectangle(frame, (0, 0), (640, 75), (10, 10, 10), -1)
+        cv2.line(frame, (0, 75), (640, 75), UIHandler.RETRO_GREEN, 2)
+
+        cv2.putText(frame, f"1P SCORE: {str(score).zfill(4)}", (25, 45),
+                    cv2.FONT_HERSHEY_PLAIN, 1.8, UIHandler.RETRO_GREEN, 2)
 
         if ia_move:
-            cv2.putText(frame, f"IA: {ia_move}", (450, 45),
-                        cv2.FONT_HERSHEY_TRIPLEX, 0.9, (0, 165, 255), 2)
+            text_ia = f"CPU: {ia_move.upper()}"
+            cv2.putText(frame, text_ia, (440, 45),
+                        cv2.FONT_HERSHEY_PLAIN, 1.8, UIHandler.RETRO_PINK, 2)
 
-        cv2.rectangle(frame, (350, 120), (600, 400), (255, 255, 255), 2)
-        cv2.putText(frame, "COLOCA TU MANO AQUI", (370, 110),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
+        cv2.putText(frame, msg.upper(), (32, 442),
+                    cv2.FONT_HERSHEY_PLAIN, 1.6, (0, 0, 0), 3)
+        cv2.putText(frame, msg.upper(), (30, 440),
+                    cv2.FONT_HERSHEY_PLAIN, 1.6, result_color, 2)
 
         return frame
 

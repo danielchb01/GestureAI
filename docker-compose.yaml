@@ -1,0 +1,16 @@
+services:
+  emogesture-ai:
+    build: .
+    container_name: emogesture_app
+    # Mapeo de volumen para editar código en Windows y verlo en el contenedor al instante
+    volumes:
+      - .:/app
+    environment:
+      # host.docker.internal apunta a tu Windows donde corre XLaunch
+      - DISPLAY=host.docker.internal:0.0
+      - PYTHONUNBUFFERED=1
+    # Permite que la terminal sea interactiva
+    stdin_open: true
+    tty: true
+    privileged: true
+    restart: unless-stopped
