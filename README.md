@@ -33,38 +33,67 @@ El sistem opera como un pipeline secuencial de datos:
 ## 🚀 Cómo ejecutar
 __Nota: El proyecto se encuentra actualmente en fase de desarrollo técnico.__ 
 
-#### 1. Clonar el repositorio
-````
-git clone https://github.com/danielchb01/GesturaAI.git
-cd GesturaAI
-````
-#### 2. Configurar el entorno virtual
-````
-python -m venv venv
-# En Windows:
-.\venv\Scripts\activate
-# En Linux/Mac:
-source venv/bin/activate
-````
-#### 3. Instalar dependencias
-````
-pip install -r environment/requirements.txt
-````
-#### 4. Lanzar la aplicación
-````
-python src/main.py
-````
-#### 5. Lanzar el dashboard
-````
-streamlit run src/dashboard.py
-````
 
+* Opción A: Arranque Rápido (Recomendado)
+    #### 1. Clonar el repositorio
+    ````
+    git clone https://github.com/danielchb01/GesturaAI.git
+    cd GesturaAI
+    ````
+    #### 2. Ejecutar Script de Automatización
+    El script se encarga de verificar el entorno y lanzar la aplicación:
+    * En Windows:
+    ````
+    run_project.bat
+    ````
+    * En Linux/Mac:
+    ````
+    chmod +x run_project.sh
+    ./run_project.sh
+    ````
+    <hr>
+
+* Opción B: Arranque Completo
+    #### 1. Clonar el repositorio
+    ````
+    git clone https://github.com/danielchb01/GesturaAI.git
+    cd GesturaAI
+    ````
+    #### 2. Configurar el entorno virtual
+    ````
+    python -m venv venv
+    # En Windows:
+    .\venv\Scripts\activate
+    # En Linux/Mac:
+    source venv/bin/activate
+    ````
+    #### 3. Instalar dependencias
+    ````
+    pip install -r environment/requirements.txt
+    ````
+    #### 4. Lanzar la aplicación
+    ````
+    python src/main.py
+    ````
+    #### 5. Lanzar el dashboard
+    ````
+    streamlit run src/dashboard.py
+    ````
 ## 📂 Estructura del Proyecto
 El proyecto está organizado siguiendo una arquitectura modular para garantizar un código limpio y escalable:
 
 ```text
 EmoGestureAI/
 │
+├── 📁 assets/                 # Recursos multimedia
+│   └── 📁 sounds/
+|      ├── 📄 ingame.wav       # Música de fondo durante la partida
+│      ├── 📄 lose.wav         # Efecto de sonido al perder
+│      ├── 📄 start.wav        # Sonido de inicio de juego
+|      ├── 📄 tick.wav         # Sonido de cuenta atrás
+|      ├── 📄 tie.wav          # Efecto de sonido en empate
+│      └── 📄 win.wav          # Efecto de sonido al ganar
+|
 ├── 📁 data/                   # Almacenamiento de datasets
 │   └── 📄 landmarks.csv       # Coordenadas extraídas para entrenamiento
 │
@@ -83,17 +112,23 @@ EmoGestureAI/
 │   ├── 📦 label_encoder.pkl   # Traductor de etiquetas numéricas a texto
 │   └── 📦 modelo_gestos.pkl    # Modelo RandomForest entrenado
 │
-└── 📁 src/                    # Código fuente (Core del proyecto)
-    ├── 📁 ml/                 # Submódulo de Inteligencia Artificial
-    │   ├── 📄 predict.py      # Motor de inferencia en tiempo real
-    │   ├── 📄 processor.py    # Extracción de puntos con MediaPipe
-    │   └── 📄 train.py        # Script de entrenamiento del modelo
-    │
-    ├── 📄 camera.py           # Gestión y abstracción de la Webcam
-    ├── 📄 game_logic.py       # Reglas del juego y motor de estados
-    ├── 📄 main.py             # Orquestador y punto de entrada principal
-    └── 📄 ui.py               # Renderizado de interfaz y feedback visual
-
+├── 📁 src/                    # Código fuente (Core del proyecto)
+│    ├── 📁 ml/                # Submódulo de Inteligencia Artificial
+│    │   ├── 📄 predict.py      # Motor de inferencia en tiempo real
+│    │   ├── 📄 processor.py    # Extracción de puntos con MediaPipe
+│    │   └── 📄 train.py        # Script de entrenamiento del modelo
+│    │
+│    ├── 📄 audio.py            # Gestión y abstracción de la Webcam
+│    ├── 📄 camera.py           # Abstracción de la captura de vídeo (Webcam)
+│    ├── 📄 dashboard.py        # Interfaz de análisis de datos con Streamlit
+│    ├── 📄 database.py         # Conectividad y persistencia con SQLite
+│    ├── 📄 game_logic.py       # Reglas del juego y motor de estados
+│    ├── 📄 main.py             # Orquestador y punto de entrada principal
+│    └── 📄 ui.py               # Renderizado de interfaz y feedback visual
+│
+└── 📁 tests/                  # Pruebas unitarias y de integración
+     ├── 📄 test_database.py    # Validación de operaciones en la BD
+     └── 📄 test_game_logic.py  # Validación de reglas y estados del juego
 ```
 ---
 *Este proyecto se desarrolla como parte de la asignatura de **Proyecto de big data e inteligencia artificial**.*
