@@ -453,3 +453,24 @@
 2026-05-03 16:38:09,191 [INFO] __main__: Aplicación cerrada correctamente.
 2026-05-03 16:38:09,359 [INFO] database: Conexión SQLite cerrada.
 >>>>>>> 9e9668cb03ffd6ced7e1a3e57910ac62deb34742
+2026-05-04 16:17:05,404 [INFO] __main__: Inicializando EmoGestureApp...
+2026-05-04 16:17:05,404 [INFO] __main__: Modo de features: 3D (63)
+2026-05-04 16:17:06,184 [INFO] database: DatabaseManager inicializado en C:\proyecto\GesturaAI\src\..\data\partidas.db
+2026-05-04 16:17:06,184 [INFO] __main__: EmoGestureApp inicializada correctamente.
+2026-05-04 16:17:06,184 [INFO] __main__: Aplicación iniciada. Presiona 'q' para salir.
+2026-05-04 16:17:15,673 [WARNING] __main__: Gesto no reconocido (confianza=0.57)
+2026-05-04 16:17:20,350 [INFO] database: Conexión SQLite cerrada.
+2026-05-04 16:31:04,645 [INFO] __main__: Inicializando EmoGestureApp...
+2026-05-04 16:31:04,646 [INFO] __main__: Modo de features: 3D (63)
+2026-05-04 16:31:05,394 [INFO] database: DatabaseManager inicializado en C:\proyecto\GesturaAI\src\..\data\partidas.db
+2026-05-04 16:31:05,556 [INFO] __main__: EmoGestureApp inicializada correctamente.
+2026-05-04 16:31:05,556 [INFO] __main__: Aplicación iniciada. Presiona 'q' para salir.
+2026-05-04 16:31:10,223 [WARNING] __main__: Gesto no reconocido (confianza=0.49)
+2026-05-04 16:31:14,766 [INFO] database: Partida #131 guardada: Scissor vs Paper -> victoria (conf=0.61)
+2026-05-04 16:31:19,325 [INFO] database: Partida #132 guardada: Stone vs Paper -> derrota (conf=0.87)
+2026-05-04 16:31:23,880 [INFO] database: Partida #133 guardada: Stone vs Scissor -> victoria (conf=0.90)
+2026-05-04 16:31:28,443 [INFO] database: Partida #134 guardada: Stone vs Stone -> empate (conf=0.90)
+2026-05-04 16:31:38,334 [INFO] __main__: Cerrando aplicación...
+2026-05-04 16:31:38,338 [INFO] database: Conexión SQLite cerrada.
+2026-05-04 16:31:38,626 [INFO] __main__: Aplicación cerrada correctamente.
+2026-05-04 16:31:38,816 [INFO] database: Conexión SQLite cerrada.

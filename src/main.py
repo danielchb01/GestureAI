@@ -71,6 +71,13 @@ class EmoGestureApp:
         self.derrotas = 0
         self.empates = 0
 
+        # 4. Audio
+        try:
+            self.audio = SoundManager()
+        except Exception as e:
+            logger.warning(f"No se pudo inicializar audio: {e}")
+            self.audio = None
+
         logger.info("EmoGestureApp inicializada correctamente.")
 
 
@@ -89,20 +96,23 @@ class EmoGestureApp:
             self.msg = f"GANASTE ({confianza:.2f}): {user_gesture} vs {self.ia_move}"
             self.color_msg = (0, 255, 0)
             resultado_txt = "victoria"
-            self.audio.play("win")
+            if self.audio:
+                self.audio.play("win")
         elif result == -1:
             self.score -= 1
             self.derrotas += 1
             self.msg = f"PERDISTE ({confianza:.2f}): {user_gesture} vs {self.ia_move}"
             self.color_msg = (0, 0, 255)
             resultado_txt = "derrota"
-            self.audio.play("lose")
+            if self.audio:
+                self.audio.play("lose")
         else:
             self.empates += 1
             self.msg = f"EMPATE ({confianza:.2f}): Ambos {user_gesture}"
             self.color_msg = (255, 255, 0)
             resultado_txt = "empate"
-            self.audio.play("tie")
+            if self.audio:
+                self.audio.play("tie")
 
         # Guardamos la partida en SQLite
         try:
