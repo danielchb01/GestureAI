@@ -58,6 +58,7 @@
 2026-05-02 18:33:49,982 [INFO] database: Partida #26 guardada: Paper vs Scissor -> derrota (conf=0.99)
 2026-05-02 18:33:54,590 [INFO] database: Partida #27 guardada: Stone vs Scissor -> victoria (conf=0.76)
 2026-05-02 18:34:56,535 [INFO] database: Conexión SQLite cerrada.
+<<<<<<< HEAD
 2026-05-03 12:54:00,517 [INFO] __main__: Inicializando EmoGestureApp...
 2026-05-03 12:54:01,066 [INFO] database: DatabaseManager inicializado en C:\proyecto\GesturaAi\src\..\data\partidas.db
 2026-05-03 12:54:01,067 [INFO] __main__: EmoGestureApp inicializada correctamente.
@@ -318,3 +319,137 @@
 2026-05-04 15:45:43,887 [INFO] database: Conexión SQLite cerrada.
 2026-05-04 15:45:44,172 [INFO] __main__: Aplicación cerrada correctamente.
 2026-05-04 15:45:44,277 [INFO] database: Conexión SQLite cerrada.
+=======
+2026-05-02 20:32:25,666 [INFO] __main__: Inicializando EmoGestureApp...
+2026-05-02 20:32:25,669 [ERROR] __main__: No se detecta la cámara. Revisa la conexión.
+2026-05-02 20:32:25,689 [INFO] database: DatabaseManager inicializado en D:\Dani\Documentos\EmoGestureAI\src\..\data\partidas.db
+2026-05-02 20:32:25,714 [INFO] __main__: EmoGestureApp inicializada correctamente.
+2026-05-02 20:32:25,714 [INFO] __main__: Aplicación iniciada. Presiona 'q' para salir.
+2026-05-02 20:32:49,138 [INFO] __main__: Cerrando aplicación...
+2026-05-02 20:32:49,139 [INFO] database: Conexión SQLite cerrada.
+2026-05-02 20:32:49,156 [INFO] __main__: Aplicación cerrada correctamente.
+2026-05-02 20:32:49,300 [INFO] database: Conexión SQLite cerrada.
+2026-05-02 20:32:53,839 [INFO] __main__: Inicializando EmoGestureApp...
+2026-05-02 20:32:54,388 [INFO] database: DatabaseManager inicializado en D:\Dani\Documentos\EmoGestureAI\src\..\data\partidas.db
+2026-05-02 20:32:54,417 [INFO] __main__: EmoGestureApp inicializada correctamente.
+2026-05-02 20:32:54,417 [INFO] __main__: Aplicación iniciada. Presiona 'q' para salir.
+2026-05-02 20:33:22,525 [INFO] __main__: Cerrando aplicación...
+2026-05-02 20:33:22,526 [INFO] database: Conexión SQLite cerrada.
+2026-05-02 20:33:22,806 [INFO] __main__: Aplicación cerrada correctamente.
+2026-05-02 20:33:22,956 [INFO] database: Conexión SQLite cerrada.
+2026-05-02 20:33:38,276 [INFO] __main__: Inicializando EmoGestureApp...
+2026-05-02 20:33:38,786 [INFO] database: DatabaseManager inicializado en D:\Dani\Documentos\EmoGestureAI\src\..\data\partidas.db
+2026-05-02 20:33:38,809 [INFO] __main__: EmoGestureApp inicializada correctamente.
+2026-05-02 20:33:38,809 [INFO] __main__: Aplicación iniciada. Presiona 'q' para salir.
+2026-05-02 20:33:46,349 [INFO] __main__: Cerrando aplicación...
+2026-05-02 20:33:46,350 [INFO] database: Conexión SQLite cerrada.
+2026-05-02 20:33:46,616 [INFO] __main__: Aplicación cerrada correctamente.
+2026-05-02 20:33:46,768 [INFO] database: Conexión SQLite cerrada.
+2026-05-02 20:36:27,847 [INFO] __main__: Inicializando EmoGestureApp...
+2026-05-02 20:36:28,375 [INFO] database: DatabaseManager inicializado en D:\Dani\Documentos\EmoGestureAI\src\..\data\partidas.db
+2026-05-02 20:36:28,401 [INFO] __main__: EmoGestureApp inicializada correctamente.
+2026-05-02 20:36:28,401 [INFO] __main__: Aplicación iniciada. Presiona 'q' para salir.
+2026-05-02 20:36:33,151 [INFO] __main__: Cerrando aplicación...
+2026-05-02 20:36:33,152 [INFO] database: Conexión SQLite cerrada.
+2026-05-02 20:36:33,437 [INFO] __main__: Aplicación cerrada correctamente.
+2026-05-02 20:36:33,581 [INFO] database: Conexión SQLite cerrada.
+2026-05-02 20:38:25,635 [INFO] __main__: Inicializando EmoGestureApp...
+2026-05-02 20:38:26,171 [INFO] database: DatabaseManager inicializado en D:\Dani\Documentos\EmoGestureAI\src\..\data\partidas.db
+2026-05-02 20:38:26,196 [INFO] __main__: EmoGestureApp inicializada correctamente.
+2026-05-02 20:38:26,196 [INFO] __main__: Aplicación iniciada. Presiona 'q' para salir.
+2026-05-02 20:38:32,188 [INFO] database: Partida #28 guardada: Paper vs Stone -> victoria (conf=0.00)
+2026-05-02 20:38:38,105 [INFO] database: Partida #29 guardada: Stone vs Stone -> empate (conf=0.00)
+2026-05-02 20:38:45,454 [INFO] database: Partida #30 guardada: Paper vs Scissor -> derrota (conf=0.00)
+2026-05-02 20:38:52,087 [INFO] database: Partida #31 guardada: Scissor vs Scissor -> empate (conf=0.00)
+2026-05-02 20:41:55,211 [INFO] database: Partida #32 guardada: Stone vs Scissor -> victoria (conf=0.00)
+2026-05-02 20:42:27,545 [INFO] __main__: Cerrando aplicación...
+2026-05-02 20:42:27,582 [INFO] database: Conexión SQLite cerrada.
+2026-05-02 20:42:27,863 [INFO] __main__: Aplicación cerrada correctamente.
+2026-05-02 20:42:28,036 [INFO] database: Conexión SQLite cerrada.
+2026-05-03 13:20:09,335 [INFO] __main__: Inicializando EmoGestureApp...
+2026-05-03 13:20:09,350 [ERROR] __main__: No se detecta la cámara. Revisa la conexión.
+2026-05-03 13:22:44,440 [INFO] __main__: Inicializando EmoGestureApp...
+2026-05-03 13:28:13,942 [INFO] __main__: Inicializando EmoGestureApp...
+2026-05-03 13:29:39,274 [INFO] __main__: Inicializando EmoGestureApp...
+2026-05-03 13:31:07,065 [INFO] __main__: Inicializando EmoGestureApp...
+2026-05-03 13:34:00,788 [INFO] __main__: Inicializando EmoGestureApp...
+2026-05-03 13:34:01,312 [INFO] database: DatabaseManager inicializado en D:\Dani\Documentos\EmoGestureAI\src\..\data\partidas.db
+2026-05-03 13:34:01,339 [INFO] __main__: EmoGestureApp inicializada correctamente.
+2026-05-03 13:34:01,339 [INFO] __main__: Aplicación iniciada. Presiona 'q' para salir.
+2026-05-03 13:35:12,648 [INFO] database: Partida #33 guardada: Paper vs Scissor -> derrota (conf=0.00)
+2026-05-03 13:35:21,215 [INFO] database: Partida #34 guardada: Paper vs Scissor -> derrota (conf=0.00)
+2026-05-03 13:35:26,139 [INFO] database: Partida #35 guardada: Paper vs Paper -> empate (conf=0.00)
+2026-05-03 13:37:46,726 [INFO] database: Conexión SQLite cerrada.
+2026-05-03 13:40:28,956 [INFO] __main__: Inicializando EmoGestureApp...
+2026-05-03 13:40:29,501 [INFO] database: DatabaseManager inicializado en D:\Dani\Documentos\EmoGestureAI\src\..\data\partidas.db
+2026-05-03 13:40:29,526 [INFO] __main__: EmoGestureApp inicializada correctamente.
+2026-05-03 13:40:29,526 [INFO] __main__: Aplicación iniciada. Presiona 'q' para salir.
+2026-05-03 13:41:23,820 [INFO] database: Conexión SQLite cerrada.
+2026-05-03 13:41:24,099 [INFO] __main__: Aplicación cerrada correctamente.
+2026-05-03 13:41:24,300 [INFO] database: Conexión SQLite cerrada.
+2026-05-03 13:44:25,588 [INFO] __main__: Inicializando EmoGestureApp...
+2026-05-03 13:44:26,131 [INFO] database: DatabaseManager inicializado en D:\Dani\Documentos\EmoGestureAI\src\..\data\partidas.db
+2026-05-03 13:44:26,271 [INFO] __main__: EmoGestureApp inicializada correctamente.
+2026-05-03 13:44:26,271 [INFO] __main__: Aplicación iniciada. Presiona 'q' para salir.
+2026-05-03 13:44:46,560 [INFO] database: Partida #36 guardada: Paper vs Scissor -> derrota (conf=0.00)
+2026-05-03 13:44:52,277 [INFO] database: Partida #37 guardada: Stone vs Scissor -> victoria (conf=0.00)
+2026-05-03 13:44:56,743 [INFO] database: Partida #38 guardada: Stone vs Paper -> derrota (conf=0.00)
+2026-05-03 13:45:00,859 [INFO] database: Partida #39 guardada: Stone vs Scissor -> victoria (conf=0.00)
+2026-05-03 13:45:04,743 [INFO] database: Partida #40 guardada: Stone vs Stone -> empate (conf=0.00)
+2026-05-03 13:45:09,075 [INFO] database: Partida #41 guardada: Scissor vs Scissor -> empate (conf=0.00)
+2026-05-03 13:45:12,783 [INFO] database: Partida #42 guardada: Scissor vs Paper -> victoria (conf=0.00)
+2026-05-03 13:45:16,713 [INFO] database: Conexión SQLite cerrada.
+2026-05-03 13:45:17,002 [INFO] __main__: Aplicación cerrada correctamente.
+2026-05-03 13:45:17,204 [INFO] database: Conexión SQLite cerrada.
+2026-05-03 13:50:53,285 [INFO] __main__: Inicializando EmoGestureApp...
+2026-05-03 13:50:53,807 [INFO] database: DatabaseManager inicializado en D:\Dani\Documentos\EmoGestureAI\src\..\data\partidas.db
+2026-05-03 13:50:53,833 [INFO] __main__: EmoGestureApp inicializada correctamente.
+2026-05-03 13:50:53,833 [INFO] __main__: Aplicación iniciada. Presiona 'q' para salir.
+2026-05-03 13:54:46,305 [INFO] database: Conexión SQLite cerrada.
+2026-05-03 13:54:46,593 [INFO] __main__: Aplicación cerrada correctamente.
+2026-05-03 13:54:46,786 [INFO] database: Conexión SQLite cerrada.
+2026-05-03 13:54:50,126 [INFO] __main__: Inicializando EmoGestureApp...
+2026-05-03 13:54:50,699 [INFO] database: DatabaseManager inicializado en D:\Dani\Documentos\EmoGestureAI\src\..\data\partidas.db
+2026-05-03 13:54:50,726 [INFO] __main__: EmoGestureApp inicializada correctamente.
+2026-05-03 13:54:50,726 [INFO] __main__: Aplicación iniciada. Presiona 'q' para salir.
+2026-05-03 13:54:54,358 [INFO] database: Conexión SQLite cerrada.
+2026-05-03 13:54:54,637 [INFO] __main__: Aplicación cerrada correctamente.
+2026-05-03 13:54:54,775 [INFO] database: Conexión SQLite cerrada.
+2026-05-03 13:57:51,550 [INFO] __main__: Inicializando EmoGestureApp...
+2026-05-03 13:57:52,084 [INFO] database: DatabaseManager inicializado en D:\Dani\Documentos\EmoGestureAI\src\..\data\partidas.db
+2026-05-03 13:57:52,110 [INFO] __main__: EmoGestureApp inicializada correctamente.
+2026-05-03 13:57:52,110 [INFO] __main__: Aplicación iniciada. Presiona 'q' para salir.
+2026-05-03 14:53:53,509 [INFO] database: Conexión SQLite cerrada.
+2026-05-03 14:53:53,794 [INFO] __main__: Aplicación cerrada correctamente.
+2026-05-03 14:53:54,001 [INFO] database: Conexión SQLite cerrada.
+2026-05-03 14:59:12,579 [INFO] __main__: Inicializando EmoGestureApp...
+2026-05-03 14:59:13,110 [INFO] database: DatabaseManager inicializado en D:\Dani\Documentos\EmoGestureAI\src\..\data\partidas.db
+2026-05-03 14:59:13,136 [INFO] __main__: EmoGestureApp inicializada correctamente.
+2026-05-03 14:59:13,137 [INFO] __main__: Aplicación iniciada. Presiona 'q' para salir.
+2026-05-03 15:01:11,987 [INFO] database: Partida #43 guardada: Paper vs Stone -> victoria (conf=0.00)
+2026-05-03 15:01:16,484 [INFO] database: Partida #44 guardada: Paper vs Scissor -> derrota (conf=0.00)
+2026-05-03 15:01:20,441 [INFO] database: Partida #45 guardada: Paper vs Scissor -> derrota (conf=0.00)
+2026-05-03 15:01:24,166 [INFO] database: Partida #46 guardada: Paper vs Paper -> empate (conf=0.00)
+2026-05-03 15:01:28,267 [INFO] database: Partida #47 guardada: Paper vs Scissor -> derrota (conf=0.00)
+2026-05-03 15:01:32,132 [INFO] database: Partida #48 guardada: Paper vs Paper -> empate (conf=0.00)
+2026-05-03 15:01:36,148 [INFO] database: Partida #49 guardada: Paper vs Scissor -> derrota (conf=0.00)
+2026-05-03 15:01:39,882 [INFO] database: Partida #50 guardada: Paper vs Scissor -> derrota (conf=0.00)
+2026-05-03 15:01:43,399 [INFO] database: Partida #51 guardada: Paper vs Stone -> victoria (conf=0.00)
+2026-05-03 15:02:24,060 [INFO] database: Conexión SQLite cerrada.
+2026-05-03 15:02:24,343 [INFO] __main__: Aplicación cerrada correctamente.
+2026-05-03 15:02:24,516 [INFO] database: Conexión SQLite cerrada.
+2026-05-03 16:37:41,196 [INFO] __main__: Inicializando EmoGestureApp...
+2026-05-03 16:37:41,704 [INFO] database: DatabaseManager inicializado en D:\Dani\Documentos\EmoGestureAI\src\..\data\partidas.db
+2026-05-03 16:37:41,732 [INFO] __main__: EmoGestureApp inicializada correctamente.
+2026-05-03 16:37:41,732 [INFO] __main__: Aplicación iniciada. Presiona 'q' para salir.
+2026-05-03 16:37:51,658 [INFO] database: Conexión SQLite cerrada.
+2026-05-03 16:37:51,923 [INFO] __main__: Aplicación cerrada correctamente.
+2026-05-03 16:37:52,054 [INFO] database: Conexión SQLite cerrada.
+2026-05-03 16:38:05,401 [INFO] __main__: Inicializando EmoGestureApp...
+2026-05-03 16:38:05,914 [INFO] database: DatabaseManager inicializado en D:\Dani\Documentos\EmoGestureAI\src\..\data\partidas.db
+2026-05-03 16:38:05,947 [INFO] __main__: EmoGestureApp inicializada correctamente.
+2026-05-03 16:38:05,947 [INFO] __main__: Aplicación iniciada. Presiona 'q' para salir.
+2026-05-03 16:38:08,920 [INFO] database: Conexión SQLite cerrada.
+2026-05-03 16:38:09,191 [INFO] __main__: Aplicación cerrada correctamente.
+2026-05-03 16:38:09,359 [INFO] database: Conexión SQLite cerrada.
+>>>>>>> 9e9668cb03ffd6ced7e1a3e57910ac62deb34742

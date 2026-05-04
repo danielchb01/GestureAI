@@ -14,3 +14,7 @@ seaborn
 
 # Dashboard de Analítica (BI)
 streamlit        
+seaborn
+
+# Audio y Vídeo
+pygame
