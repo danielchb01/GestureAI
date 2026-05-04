@@ -52,7 +52,6 @@ class EmoGestureApp:
         if not self.camera.try_connect():
             logger.error("No se detecta la cámara. Revisa la conexión.")
 
-<<<<<<< HEAD
         self.ui = UIHandler()                               # UI (dibujos en pantalla)
         self.game = GameEngine()                            # Lógica del juego (piedra-papel-tijera)
         self.processor = HandProcessor(use_3d=self.use_3d)  # Procesador de manos (MediaPipe)
@@ -71,23 +70,6 @@ class EmoGestureApp:
         self.victorias = 0
         self.derrotas = 0
         self.empates = 0
-=======
-        self.ui = UIHandler()
-        self.game = GameEngine()
-        self.processor = HandProcessor()
-        self.db = DatabaseManager()
-        self.audio = SoundManager()
-        self.score = 0
-        self.state = "MENU"
-        self.msg = "Presiona ESPACIO para jugar"
-        self.ia_move = None
-        self.color_msg = (255, 255, 255)
-        self.start_time = 0
-        self.last_confianza = 0.0
-        self.last_tick = -1
-        self.audio.play_music()
-        self.music_playing = True
->>>>>>> 9e9668cb03ffd6ced7e1a3e57910ac62deb34742
 
         logger.info("EmoGestureApp inicializada correctamente.")
 
@@ -146,7 +128,6 @@ class EmoGestureApp:
             frame = self.camera.get_frame()
             if frame is None:
                 frame = self.ui.draw_error_screen()
-<<<<<<< HEAD
             else:
 
                 # 2. Detección de landmarks
@@ -230,31 +211,6 @@ class EmoGestureApp:
                         # Volvemos al estado inicial
                         self.state = "RESULT"
                         self.result_time = time.time()
-=======
-
-            key = cv2.waitKey(1) & 0xFF
-
-            if self.state == "MENU":
-                frame = self.ui.draw_menu(frame)
-                if key == ord(' '):
-                    self.audio.play("start")
-                    self.state = "COUNTDOWN"
-                    self.start_time = time.time()
-
-            elif self.state == "COUNTDOWN":
-                elapsed = time.time() - self.start_time
-                seconds_left = 3 - int(elapsed)
-
-                if seconds_left != self.last_tick and seconds_left > 0:
-                    self.audio.play("tick")
-                    self.last_tick = seconds_left
-
-                if elapsed < 3:
-                    self.msg = f"Lanzando en... {seconds_left}"
-                else:
-                    self.state = "PLAYING"
-                    self.last_tick = -1
->>>>>>> 9e9668cb03ffd6ced7e1a3e57910ac62deb34742
 
                 elif self.state == "RESULT":
                     if time.time() - self.result_time > self.RESULT_DELAY:
@@ -263,7 +219,6 @@ class EmoGestureApp:
                         self.ia_move = None
                         self.msg = " "
 
-<<<<<<< HEAD
                 elif self.state == "GAME_OVER":
 
                     # Oscurecer pantalla para ver que el juego ha terminado
@@ -358,41 +313,6 @@ class EmoGestureApp:
         # 8. Cerramos todo al salir
         logger.info("Cerrando aplicación...")
 
-=======
-            elif self.state == "PLAYING":
-                landmarks = self.processor.extract_landmarks(frame)
-                if landmarks:
-                    res = predecir_gesto(landmarks)
-                    if res["reconocido"]:
-                        self.resolve_game(res["gesto"])
-                        self.state = "RESULT"
-                    else:
-                        self.msg = "Gesto no reconocido. Intenta de nuevo."
-                else:
-                    self.msg = "No se detecta la mano..."
-
-                frame = self.ui.draw_hud(
-                    frame, self.msg, self.score, self.ia_move, self.color_msg)
-
-            elif self.state == "RESULT":
-                frame = self.ui.draw_hud(
-                    frame, self.msg, self.score, self.ia_move, self.color_msg)
-
-                if int(time.time() * 2) % 2 == 0:
-                    cv2.putText(frame, "PUSH SPACE TO CONTINUE", (180, 250),
-                                cv2.FONT_HERSHEY_PLAIN, 1.5, (255, 255, 255), 2)
-
-                if key == ord(' '):
-                    self.ia_move = None
-                    self.state = "COUNTDOWN"
-                    self.start_time = time.time()
-
-            cv2.imshow("EmoGestureAI", frame)
-            if key == ord('q'):
-                break
-
-        # Cerramos todo al salir
->>>>>>> 9e9668cb03ffd6ced7e1a3e57910ac62deb34742
         self.db.cerrar()
         self.audio.stop_music()
         self.camera.release()
